@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Tampilan_Awal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ProfilActivity">
+
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="415dp"
+      android:layout_height="739dp"
+      android:src="@drawable/backcground_profil"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/btnBack"
+      android:layout_width="52dp"
+      android:layout_height="58dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="338dp"
+      android:layout_marginBottom="635dp"
+      android:src="@drawable/btn_back"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.03"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/imageView3"
+      app:layout_constraintVertical_bias="0.005" />
+
+  <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="146dp"
+      android:layout_height="27dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="137dp"
+      android:layout_marginBottom="656dp"
+      android:src="@drawable/edit_profil"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/viewImage"
+      android:layout_width="134dp"
+      android:layout_height="141dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginTop="102dp"
+      android:layout_marginEnd="144dp"
+      android:layout_marginBottom="488dp"
+      android:src="@drawable/profil_user"
+      app:civ_border_color="#FF000000"
+      app:civ_border_width="2dp" />
+
+  <ImageView
+      android:id="@+id/validasi_foto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="142dp"
+      android:layout_marginBottom="488dp"
+      android:src="@drawable/validasi_photo_profil"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.683"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/imageView3"
+      app:layout_constraintVertical_bias="0.385" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="339dp"
+      android:layout_height="26dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="30dp"
+      android:layout_marginBottom="330dp"
+      android:text="Fullname"
+      android:textColor="@color/orange"
+      android:textSize="15sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.535" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="336dp"
+      android:layout_height="24dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="31dp"
+      android:layout_marginBottom="171dp"
+      android:text="Phone"
+      android:textColor="@color/orange"
+      android:textSize="15sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.644" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="339dp"
+      android:layout_height="25dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="27dp"
+      android:layout_marginBottom="247dp"
+      android:text="Gender"
+      android:textColor="@color/orange"
+      android:textSize="15sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.752" />
+
+  <EditText
+      android:id="@+id/email"
+      style="@style/styleEditText"
+      android:layout_width="314dp"
+      android:layout_height="42dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="56dp"
+      android:layout_marginBottom="281dp"
+      android:background="@drawable/bar"
+      android:hint="Fullname"
+      android:paddingLeft="20dp"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.593" />
+
+  <EditText
+      android:id="@+id/email2"
+      style="@style/styleEditText"
+      android:layout_width="314dp"
+      android:layout_height="42dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="56dp"
+      android:layout_marginBottom="126dp"
+      android:background="@drawable/bar"
+      android:hint="Phone"
+      android:paddingLeft="20dp"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.521"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.704" />
+
+  <EditText
+      android:id="@+id/email3"
+      style="@style/styleEditText"
+      android:layout_width="314dp"
+      android:layout_height="42dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="41dp"
+      android:layout_marginEnd="56dp"
+      android:layout_marginBottom="204dp"
+      android:background="@drawable/bar"
+      android:hint="Gender"
+      android:paddingLeft="20dp"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.521"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.814" />
+
+  <Button
+      android:id="@+id/save_profil"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="107dp"
+      android:layout_marginBottom="55dp"
+      android:backgroundTint="@color/orange"
+      android:text="Save"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.945" />
+
+
+</RelativeLayout>

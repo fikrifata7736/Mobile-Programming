@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="umn.ac.id.sangjuara_uas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sangjuara_UAS">
+
+
+        <activity android:name="umn.ac.id.sangjuara_uas.TampilanProduct.TampilanProductActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.payment.CheckoutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.Register.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.Register.CreateAccountActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="umn.ac.id.sangjuara_uas.TampilanMenu.TampilanKeempatActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.ProfilActivity">
+            <intent-filter>
+        <action android:name="android.intent.action.INSERT" />
+    </intent-filter>
+    </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.TampilanMenu.TampilanKetigaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.TampilanMenu.TampilanKeduaActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.INSERT" />
+        </intent-filter>
+        </activity>
+        <activity android:name="umn.ac.id.sangjuara_uas.TampilanMenu.TampilanPertamaActivity"
+            android:label="@string/app_name"
+
+            android:parentActivityName=".Register.LoginActivity">
+        </activity>
+        <activity android:name=".bootscreen.TampilanAwalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest>
